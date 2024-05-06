@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    margin: 20px;
+    background: rgb(36, 43, 172); 
+    overflow: hidden; 
+    background: #113c90;
+    
+}
+.glass_screen{
+    height: 95%;
+    width: 97%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 7px;
+    background: rgb(15, 123, 145);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgb(2, 41, 114) 0%, rgb(8, 5, 73) 25%);
+    background: radial-gradient(circle at 50% 47%, rgb(14, 185, 219) 0%, rgb(16, 157, 192) 0%, rgb(6, 8, 112) 79%);
+}
+
+.navbar{
+    height: 10vh;
+    display: flex;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+    background: white;
+    transition: .3s;
+}
+.navbar ul li a{
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+}
+.super_container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: grid;
+    padding: 5rem;
+    align-self: flex-start;
+}
+.context{
+    width: 70%;
+    line-height: 1;
+    text-align: center;
+    margin: auto;
+}
+.context h1{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    margin-left: -8rem;
+    margin-top: -4rem;
+    
+}
+.context p{
+    line-height: 15px;
+    color: white;
+    font-size: .8rem;
+    text-align: justify;
+}
+.context a{
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+}
+.context a:hover{
+    color: black;
+    background: white;
+    transition: .3s;
+}
+.SIVA{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-top: -290px;
+    text-align: center;
+    margin-left: -1100px;
+    font-weight: 600;
+}
+.ASHWIN{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-top: -110px;
+    text-align: center;
+    font-weight: 600;
+}
+.AYYAPPA{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    margin-top: -110px;
+    text-align: center;
+    margin-right: -1100PX;
+    font-weight: 600;
+}

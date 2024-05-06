@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 20px;
+    background: rgb(36, 43, 172);
+    overflow: hidden;
+    background: #113c90;
+}
+
+.glass_screen {
+    height: 95%;
+    width: 97%;
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(160deg, #1a2e9c, #6490ee, #11224e);
+    border-radius: 7px;
+    background: rgb(15, 123, 145);
+    background: radial-gradient(circle, rgb(14, 185, 219) 0%, rgb(16, 157, 197) 0%, rgb(6, 8, 112) 19%);
+    background: radial-gradient(circle at 70% 47%, rgb(14, 185, 219) 0%, rgb(16, 157, 197) 0%, rgb(6, 8, 112) 19%);
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background: white;
+    transition: .3s;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+}
+
+.super_container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+}
+
+.context {
+    width: 70%;
+}
+
+.context h1 {
+    font-size: 5rem;
+    line-height: normal;
+    color: white;
+}
+
+.context p {
+    line-height: 15px;
+    color: white;
+    font-size: .8rem;
+    text-align: justify;
+}
+
+.context a {
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+}
+
+.context a:hover {
+    color: black;
+    background: white;
+    transition: .3s;
+}
+
+.box_image img {
+    position: absolute;
+    z-index: -1;
+    top: 25%;
+    right: 22%
+}
+
+
+button {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    background-color: transparent;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    transition: .3s;
+}
+
+form{
+    background: white;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+    box-shadow: 0 0 5px 3px white;
+    display: block;
+}
+
+form [type="submit"] {
+    cursor: pointer;
+    padding: 10px 30px;
+    margin: 0 10px;
+    background: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+form [type="file"] {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+
+.pred_res {
+    color: white;
+    font-size: 50px;
+    background: #000;
+    padding: 30px;
+    width: 65%;
+    border-radius: 25px;
+    text-align: center;
+    margin: 0 0 0 3rem;
+}
+
+.sup_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}

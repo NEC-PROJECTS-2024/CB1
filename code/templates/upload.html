@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETECTION PAGE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Detection.css') }}">
+</head>
+<body>
+    <div class="glass_screen"></div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/upload">DETECTION</a></li>
+            <li><a href="/aboutus">ABOUT US</a></li>
+        </ul>
+    </div>
+
+    <div class="sup_container">
+        <div class="super_container">
+            <div class="container">
+                <div class="context">
+                    <h1>KIDNEY TUMOR DETECTION</h1>
+                    <p>UPLOAD YOUR CT SCAN IMAGE AND KNOW IF YOUR KIDNEY IS AFFECTED BY A TUMOR</p>
+                    <div>
+                        <form action="/upload" method="post" enctype="multipart/form-data">
+                            <input type="file" name="file" id="fileInput" accept=".jpg, .jpeg, .png, .gif">
+                            <input type="submit" value="Upload">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+        {% if prediction %}
+            <div class="pred_res">Prediction: <br> {{ prediction }}</div>
+        {% endif %}
+    </div>
+
+    
+     <div class="box_image">
+        <img src="{{ url_for('static', filename='kidney.png') }}" alt="kidney image">
+    </div> 
+</body>
+</html>
