@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    margin: 20px;
+    background: rgb(36, 43, 172);
+    overflow: hidden;
+    background: #113c90;
+}
+.glass_screen{
+    height: 95%;
+    width: 97%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 7px;
+    background: rgb(15, 123, 145);
+    background: radial-gradient(circle, rgba(0,212,255,1) 0%, rgb(2, 41, 114) 0%, rgb(8, 5, 73) 25%);
+    background: radial-gradient(circle at 0% 47%, rgb(14, 185, 219) 0%, rgb(16, 157, 192) 0%, rgb(6, 8, 112) 79%);
+}
+
+.navbar{
+    height: 10vh;
+    display: flex;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.navbar ul li{
+    list-style-type: none;
+}
+
+.navbar ul li a{
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+    background: white;
+    transition: .3s;
+}
+.navbar ul li a{
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+}
+.super_container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4rem;
+}
+.context{
+    width: 70%;
+    line-height: 9rem;
+}
+.context h1{
+    font-size: 5rem;
+    color: white;
+    text-align: .8rem;
+}
+.context p{
+    line-height: 15px;
+    color: white;
+    font-size: .8rem;
+    text-align: justify;
+}
+.context a{
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 30px;
+    color: white;
+}
+.context a:hover{
+    color: black;
+    background: white;
+    transition: .3s;
+}
+.box_image img{
+    margin-left: 15rem;
+    margin-top: -5rem;
+}
